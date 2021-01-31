@@ -28,10 +28,12 @@ class ViewController: UIViewController {
     }
     
     func showInt(_ value: Int) {
+        print(#function, value)
         label.text = "\(value)"
     }
     
     func showError(_ error: Error) {
+        print(#function, error)
         label.text = error.localizedDescription
     }
     
